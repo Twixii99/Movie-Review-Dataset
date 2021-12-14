@@ -20,7 +20,11 @@ I convert the text into its BoW representaional model.
 * tunning the models parameters
 * selecting the model with the best Accuracy score
 
-# Building virtual environment 
+## EDA
+* Standerizing the data.
+* Using PCA (principle component analysis) for better understanding the data and minimize the number of feature.
+
+## Building virtual environment 
 ```bash
 # installing PIPENV virtual environment creator
 pip install pipenv
@@ -31,7 +35,7 @@ pipenv intall numpy pandas sklearn xgboost flask requests gunicorn
 # for Running the virtual environment
 pipenv shell
 ```
-# How to build a container (Docker)
+## How to build a container (Docker)
 ```bash
 # Make sure you have docker first
 # After building your own image use the following command to build the image
