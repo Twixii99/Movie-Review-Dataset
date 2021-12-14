@@ -3,45 +3,22 @@
 
 This problem is about predicting the weather of the contenent of Austerilia.
 
-The [data](https://www.kaggle.com/jsphyg/weather-dataset-rattle-package) contains about 23 columns, splitting between 6 categorical data and 16 quantative data columns.
-
-## Data Description
-### Categorical data :
-* Date
-* location
-* windgustdir
-* winddir9am
-* winddir3pm
-* raintoday
-### Numerical data :
-*  mintemp
-*  maxtemp
-*  rainfall
-*  evaporation
-*  sunshine
-*  windgustspeed
-*  windspeed9am
-*  windspeed3pm
-*  humidity9am
-*  humidity3pm
-*  pressure9am
-*  pressure3pm
-*  cloud9am
-*  cloud3pm
-*  temp9am
-*  temp3pm
+The [data](https://ai.stanford.edu/~amaas/data/sentiment/).
+IMDB movie review dataset, which is a dataset for binary sentiment classification. The IMDB dataset was first proposed by Maas. As a benchmark for sentiment analysis. The core dataset contains 50,000 reviews split evenly into 25k training and 25k testing sets. The overall distribution of labels is balanced in both the training and testing sets (25k positive and 25k negative). There are additional 50,000 unlabeled reviews that may be used for unsupervised learning.
 
 # Problem Thinking
 
-* Removing the `Date` column as it's just Irrelevant to the problem
-* Making EDA on the `Categorical data` and `Numerical data` independantly.
+* Download Data and Apply Text Pre-processing.
+* Loading the data which is the reviews from the given files.
+Text pre-processing is essential for NLP tasks. I used the open source NLTK for available text-preprocessing operations such as: tokenization, stop words removal, stemming, lemmatization, etc.
+* Create a Data Matrix.
+Needed to convert the text of each review (after pre-processing) into a vector form to construct the data matrix.
+I convert the text into its BoW representaional model.
 * Trying different ML calssification algorithms such as:
-    * Logistic regression
-    * Decision tree
-    * Random forest
-    * XGB random forest
+    * KNN (unsupervised)
+    * XGB random forest (supervised)
 * tunning the models parameters
-* selecting the model with the best ROC_AUC score
+* selecting the model with the best Accuracy score
 
 # Building virtual environment 
 ```bash
