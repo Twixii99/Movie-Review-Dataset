@@ -12,7 +12,10 @@ IMDB movie review dataset, which is a dataset for binary sentiment classificatio
 Text pre-processing is essential for NLP tasks. I used the open source NLTK for available text-preprocessing operations such as: tokenization, stop words removal, stemming, lemmatization, etc.
 * Create a Data Matrix.
 Needed to convert the text of each review (after pre-processing) into a vector form to construct the data matrix.
-I convert the text into its BoW representaional model.
+Converted the text using 3. different representitional techniques:
+    * `Bag of words (BoW)` : which is counting for the occurence of words through out the documnents.
+    * `TF-IDF` : Better representation than the BoW.
+    * `Word Embedding` : used Fast Text API developed by "Face book" for providing the best representation of the words.
 * Trying different ML calssification algorithms such as:
     * KNN (unsupervised)
     * XGB random forest (supervised)
@@ -23,6 +26,9 @@ I convert the text into its BoW representaional model.
 * Standerizing the data.
 * Using PCA (principle component analysis) for better understanding the data and minimize the number of feature.
 
+## Results
+* Managed to reach accuracy of 89% using `Logistic regression` model.
+* Comparing more than 7 machine learning. classifiers such as `KNN`, `Naive Bayes`, `Non-Linear SVM`, `Bagging and Boosting`, etc.
 ## Building virtual environment 
 ```bash
 # installing PIPENV virtual environment creator
