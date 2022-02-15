@@ -23,6 +23,11 @@ Converted the text using 3. different representitional techniques:
 * selecting the model with the best Accuracy score
 
 ## EDA
+* Removs all numbers and punctuations from the string and replace a space instead.
+* Get the position of word i.e. dermines if the given word is Noun, Verb, Adverb or Adjective
+* Removing all non English words, Lemmatize each word i.e. retuen each word in each sentance to its origin.
+
+### Data matrix manipulation
 * Standerizing the data.
 * Using PCA (principle component analysis) for better understanding the data and minimize the number of feature.
 
